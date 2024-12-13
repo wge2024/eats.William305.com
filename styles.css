@@ -1,0 +1,58 @@
+body {
+    background-color: white;
+    color: #333;
+}
+
+header {
+    padding: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+.logo {
+    /* This ensures the logo doesn't exceed its container's width */
+    max-width: 100%;
+    /* This keeps the logo's aspect ratio */
+    height: auto;
+}
+
+.sidebar {
+    padding-top: 1rem;
+}
+
+.video-title {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.affiliate-placeholder {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    /* Show affiliate placeholders between iframes */
+    .affiliate-placeholder {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .affiliate-placeholder img {
+        max-width: 200px;
+        width: 100%;
+        height: auto;
+    }
+    .logo {
+        /* Adjust this value to your desired max size on larger screens */
+        max-width: 100px; 
+    }
+}
